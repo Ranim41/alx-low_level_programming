@@ -1,4 +1,4 @@
- #include "main.h"
+#include "main.h"
 /**
  * _isalpha - return 1 when c is cap or low
  *
@@ -11,7 +11,7 @@
 int _isalpha(int c)
 {
 	char lower, upper;
-	int letter = '0';
+	int letter = 0;
 
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
