@@ -2,7 +2,7 @@
 /**
  * print_sign - used to print sign of a value
  *Description: n will be used with condition
- *@n: the valuein question
+ *@n: the value in question
  *
  * Return: (0) or (1) depending
  */
