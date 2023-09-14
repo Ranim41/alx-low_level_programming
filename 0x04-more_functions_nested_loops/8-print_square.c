@@ -2,8 +2,9 @@
 /**
  * print_squar - prints a squar of size
  *
- * @size: size of the square
  * Description: This function prints a square with the given size
+ * @size: size of the square
+ *
  * Return: void
  */
 
