@@ -1,11 +1,7 @@
 #include "main.h"
 /**
- * print_squar - prints a squar of size
- *
- * Description: This function prints a square with the given size
+ * print_squar - prints a squar of specified size
  * @size: size of the square
- *
- * Return: void
  */
 
 void print_square(int size)
@@ -18,9 +14,9 @@ void print_square(int size)
 	return;
 	}
 
-	for (i = 1; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
-	for (j = 1; j <= size; j++)
+	for (j = 0; j < size; j++)
 	{
 		_putchar('#');
 	}
