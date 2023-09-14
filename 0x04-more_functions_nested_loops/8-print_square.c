@@ -1,7 +1,11 @@
 #include "main.h"
+
 /**
  * print_squar - prints a squar of specified size
+ *
  * @size: size of the square
+ *
+ * Return: void
  */
 
 void print_square(int size)
