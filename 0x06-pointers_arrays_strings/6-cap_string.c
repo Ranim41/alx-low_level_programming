@@ -1,39 +1,44 @@
 #include "main.h"
 
 /**
- * cap_strin - function that capitalizes all words of a string
+ * cap_strin - capitalizes all words in  a string
+ * @str: the string to be capitalized
  *
- * @s: pointer to string
+ * Description:
+ * this function takes a string as input and
+ *capitalize the firest letter of each word in the string
+ *	words are delimited by space, tabs, or newline
+ *characters. the original string is modified in-place
  *
- * Return: pointer to s
+ * Return: pointer to modified string
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int string_count;
 
 	/*scan through string*/
 	string_count = 0;
-	while (s[string_count] != '\0')
+	while (str[string_count] != '\0')
 	{/*if next character after count is a char , capitalise it */
-		if (s[0] >= 97 && s[0] <= 122)
+		if (str[0] >= 97 && str[0] <= 122)
 		{
-			s[0] = s[0] - 32;
+			str[0] = s[0] - 32;
 		}
-		if (s[string_count] == ' ' || s[string_count] == '\t' ||
-			s[string_count] == '\n'
-			|| s[string_count] == ',' || s[string_count] == ':'
-			|| s[string_count] == '.'
-			|| s[string_count] == '.' || s[string_count] == '!'
-			|| s[string_count] == '?'
-			|| s[string_count] == '{' || s[string_count] == '}')
+		if (str[string_count] == ' ' || str[string_count] == '\t' ||
+			str[string_count] == '\n'
+			|| str[string_count] == ',' || str[string_count] == ':'
+			|| str[string_count] == '.'
+			|| str[string_count] == '.' || str[string_count] == '!'
+			|| str[string_count] == '?'
+			|| str[string_count] == '{' || str[string_count] == '}')
 		{
-			if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
+			if (str[string_count + 1] >= 97 && str[string_count + 1] <= 122)
 			{
-				s[string_count + 1] = s[string_count + 1] - 32;
+				str[string_count + 1] = str[string_count + 1] - 32;
 			}
 		}
 		string_count++;
 	}
-	return (s);
+	return (str);
 }
