@@ -9,9 +9,9 @@
  * Return: (0)
  */
 
-iny prime_a(int a, int b)
+int prime_a(int a, int b)
 {
-	if (a <= 1 || (a != b && a & b == 0))
+	if (a <= 1 || (a != b && a % b == 0))
 	{
 		return (0);
 	}
