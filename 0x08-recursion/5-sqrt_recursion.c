@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _sqrt_a - returns the natural square root
- *		of a number
- * Description: fuction for sqrt
+ * _sqrt_a - find square root
  *
- * @a:input  number
- * @b:iterator
+ *Description: fuction find sqrt
  *
- * Return: square root or -1
+ * @a: int to find square root
+ * @b: square root
+ *
+ * Return: int
  */
 
-int sqrt_a(int a, int b)
+int _sqrt_a(int a, int b)
 {
 	if (b * b == a)
 	{
