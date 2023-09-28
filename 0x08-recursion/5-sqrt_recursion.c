@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_a - find square root
- *
- *Description: fuction find sqrt
+ * sqrt_a - find square root
  *
  * @a: int to find square root
  * @b: square root
@@ -11,7 +9,7 @@
  * Return: int
  */
 
-int _sqrt_a(int a, int b)
+int sqrt_a(int a, int b)
 {
 	if (b * b == a)
 	{
