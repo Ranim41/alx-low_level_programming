@@ -31,7 +31,7 @@ int _string_length_helper(char *s)
  */
 int _compare_string_helper(char *s, int s1, int s2)
 {
-	if (*(s + s1) == *(s + s2))
+	if (*(s + s1) != *(s + s2))
 	{
 		return (0);
 	}
