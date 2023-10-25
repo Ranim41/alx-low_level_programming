@@ -13,7 +13,7 @@ int _sqrt_helper(int a, int c)
 {
 	if (c * c == a)
 	{
-		return (b);
+		return (c);
 	}
 	else if (c * c > a)
 	{
