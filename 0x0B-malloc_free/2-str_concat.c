@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-	else if (*s2 == '\0')
+	if (*s2 == '\0')
 	{
 		s2 = "";
 	}
