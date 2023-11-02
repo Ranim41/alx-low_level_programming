@@ -5,7 +5,7 @@
  *
  * @b: number of integers to be allocated
  *
- * Return: Nothing
+ * Return: pointre
  */
 
 void *malloc_checked(unsigned int b)
