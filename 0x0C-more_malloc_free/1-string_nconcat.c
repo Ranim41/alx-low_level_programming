@@ -16,30 +16,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 
 	if (s1 == NULL)
-	{
-		s1 = "";
-	}
+	s1 = "";
 	if (s2 == NULL)
-	{
-		s2 = "";
-	}
+	s2 = "";
 	i = strlen(s1);
 	j = strlen(s2);
 	if (n > j)
-	{
-		n = j;
-	}
+	n = j;
 	l = i + n + 1;
 
 	ptr = malloc(sizeof(char) * l);
 	if (ptr == NULL)
-	{
-		return (NULL);
-	}
+	return (NULL);
 	for (i = 0; s1[i]; i++)
-	{
-		ptr[i] = s1[i];
-	}
+	ptr[i] = s1[i];
 	for (j = 0; j < n; j++)
 	{
 		ptr[i] = s2[j];
