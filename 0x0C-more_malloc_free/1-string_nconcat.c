@@ -2,11 +2,9 @@
 
 /**
  * string_nconcat - function that concatenates two strings
- *
  * @s1: first string
  * @s2: second string
  * @n: number of bytes
- *
  * Return: pointr
  */
 
@@ -24,17 +22,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 	n = j;
 	l = i + n + 1;
-
 	ptr = malloc(sizeof(char) * l);
 	if (ptr == NULL)
 	return (NULL);
 	for (i = 0; s1[i]; i++)
 	ptr[i] = s1[i];
-	for (j = 0; j < n; j++)
-	{
-		ptr[i] = s2[j];
-		i++;
-	}
+	for (j = 0; j < n; j++, i++)
+	ptr[i] = s2[j];
 	ptr[i] = '\0';
 	return (ptr);
 }
