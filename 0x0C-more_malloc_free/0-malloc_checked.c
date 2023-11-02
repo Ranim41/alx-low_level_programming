@@ -5,12 +5,12 @@
  *
  * @b: number of integers to be allocated
  *
- * Return: pointre
+ * Return: pointre or NULL
  */
 
 void *malloc_checked(unsigned int b)
 {
-	void *ptr;
+	int *ptr;
 
 	ptr = malloc(b);
 	if (ptr == NULL)
