@@ -6,7 +6,7 @@
 #include <string.h>
 
 /**
- * struct dog - short description 
+ * struct dog - short description
  * @name: first member
  * @age: seconed member
  * @owner: third member
@@ -20,7 +20,7 @@ struct dog
 	char *owner;
 };
 
-typedef struct dog dog_t
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
