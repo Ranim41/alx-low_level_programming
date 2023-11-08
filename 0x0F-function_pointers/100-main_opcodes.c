@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	unsigned char *ptr = (unsigned char *)main;
+	char *ptr = (char *)main;
 
 	for (i = 0; i < number_of_bytes; i++)
 	{
