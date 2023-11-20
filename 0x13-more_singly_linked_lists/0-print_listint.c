@@ -3,7 +3,7 @@
 /**
  * print_listint- function print all the elements of the list
  * @h: head pointer
- * Return: size_t value
+ * Return: number of elements
  */
 
 size_t print_listint(const listint_t *h)
