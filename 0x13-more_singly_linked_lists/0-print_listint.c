@@ -1,1 +1,1 @@
-#include "task/0-print_listint.c"
+#include "task/print_task"
