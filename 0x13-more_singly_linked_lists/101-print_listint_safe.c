@@ -12,10 +12,10 @@ size_t print_listint_safe(const listint_t *head)
 	unsigned int count = 0;
 
 	temp = head;
-	if (temp == 0)
-		return (0);
+	if (temp == NULL)
+		return (NULL);
 
-	while (temp != 0)
+	while (temp != NULL)
 	{
 		temp2 = temp;
 		temp = temp->next;
