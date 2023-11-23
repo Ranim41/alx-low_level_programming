@@ -14,9 +14,9 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (*b)
 	{
-		if (b == '0')
+		if (*b == '0')
 			sum <<= 1;
-		else if (b == '1')
+		else if (*b == '1')
 		{
 			sum <<= 1;
 			sum |= 1;
