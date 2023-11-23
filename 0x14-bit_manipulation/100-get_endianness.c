@@ -10,7 +10,7 @@ int get_endianness(void)
 	unsigned int n = 1;
 	char *b = (char *)&n;
 
-	if (*byte == 1)
+	if (*b == 1)
 		return (1);
 	else
 		return (0);
