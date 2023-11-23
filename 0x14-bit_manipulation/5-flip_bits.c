@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int ranim;
 	int i = 0;
 
-	renim = n ^ m;
+	ranim = n ^ m;
 
 	while (ranim != 0)
 	{
