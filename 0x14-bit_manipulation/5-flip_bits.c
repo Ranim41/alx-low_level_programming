@@ -14,10 +14,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int i = 0;
 
 	renim = n ^ m;
-	while (ranim > 0)
+
+	while (ranim != 0)
 	{
 		i += ranim & 1;
-		ranim >>= 1;
+		ranim = ranim >> 1;
 	}
 	return (i);
 }
