@@ -8,8 +8,8 @@
 #include<fcntl.h>
 #include <sys/stat.h>
 
-#define BUFF_SIZE 1024
-#define READ_BUFF_SIZE 1024
+#define BUF_SIZE 1024
+#define READ_BUF_SIZE 1024
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
